@@ -29,7 +29,7 @@ public class Main {
         moveX = sc.nextInt();
         System.out.println("Виберите точку по оси y");
         moveY = sc.nextInt();
-        System.out.println("Перемещаем коня...");
+
         // Меняем координаты коня
         horse.moveHorse(moveX, moveY);
         // Перемещаем коня
