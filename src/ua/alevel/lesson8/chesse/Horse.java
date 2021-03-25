@@ -29,7 +29,8 @@ public class Horse {
         }
 
         //Проверяем возможно ли перемещение и перемещаем
-        if ((inDesk) && (moveX == horsePointX + 1 && moveY == horsePointY + 2) || (moveX == horsePointX + 2 && moveY == horsePointY + 1)){
+        if ((inDesk) && (((moveX == horsePointX + 1 || moveX == horsePointX - 1) && (moveY == horsePointY + 2 || moveY == horsePointY - 2))
+                || ((moveX == horsePointX + 2 || moveX == horsePointX - 2) && (moveY == horsePointY + 1 || moveY == horsePointY - 1)))){
             System.out.println("Конь перемещен на X: " + moveX + ", Y: " + moveY);
             horsePointX = moveX;
             horsePointY = moveY;
