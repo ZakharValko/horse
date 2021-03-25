@@ -7,7 +7,7 @@ public class Horse {
     // Метод для установки коня
     public static void setHorse(int setX, int setY) {
         //Проверяем возможность установки коня
-        if ((setX >= 0 && setX <= 7) && (setY >= 0 && setY <= 7)) {
+        if ((setX >= 1 && setX <= 8) && (setY >= 1 && setY <= 8)) {
             System.out.println("Конь установлен");
             horsePointX = setX;
             horsePointY = setY;
@@ -20,7 +20,7 @@ public class Horse {
     public static void moveHorse(int moveX, int moveY){
         boolean inDesk;
         //Проверяем находится ли желаемое перемещение в границах доски
-        if((moveX >= 0 && moveX <= 7) && (moveY >= 0 && moveY <= 7 )){
+        if((moveX >= 1 && moveX <= 8) && (moveY >= 1 && moveY <= 8 )){
             inDesk = true;
         } else {
             System.out.println("Перемещение коня за границы доски невозможно!");
